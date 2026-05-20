@@ -1,0 +1,34 @@
+[
+  {
+    "id_producto": "p1",
+    "nombre": "Café americano",
+    "descripcion": "Café filtrado, 250ml",
+    "precio": 1.5,
+    "disponibilidad": true,
+    "id_categoria": "c1"
+  },
+  {
+    "id_producto": "p2",
+    "nombre": "Jugo de naranja",
+    "descripcion": "Jugo natural 300ml",
+    "precio": 2.0,
+    "disponibilidad": true,
+    "id_categoria": "c1"
+  },
+  {
+    "id_producto": "p3",
+    "nombre": "Sándwich de jamón",
+    "descripcion": "Pan integral con jamón y queso",
+    "precio": 3.25,
+    "disponibilidad": true,
+    "id_categoria": "c3"
+  },
+  {
+    "id_producto": "p4",
+    "nombre": "Barrita de cereal",
+    "descripcion": "Barrita energética",
+    "precio": 1.0,
+    "disponibilidad": false,
+    "id_categoria": "c2"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  { "id_detalle": "d1", "id_pedido": "o1", "id_producto": "p1", "cantidad": 1, "subtotal": 1.5 },
+  { "id_detalle": "d2", "id_pedido": "o1", "id_producto": "p3", "cantidad": 1, "subtotal": 3.25 },
+  { "id_detalle": "d3", "id_pedido": "o2", "id_producto": "p3", "cantidad": 1, "subtotal": 3.25 },
+  { "id_detalle": "d4", "id_pedido": "o2", "id_producto": "p4", "cantidad": 1, "subtotal": 1.0 }
+]

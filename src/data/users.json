@@ -1,0 +1,23 @@
+[
+  {
+    "id_usuario": "u1",
+    "nombre": "Ana López",
+    "correo": "ana.lopez@udc.edu",
+    "matricula": "A2023001",
+    "rol": "cliente"
+  },
+  {
+    "id_usuario": "u2",
+    "nombre": "Carlos Morales",
+    "correo": "carlos.morales@udc.edu",
+    "matricula": "M102",
+    "rol": "cajero"
+  },
+  {
+    "id_usuario": "u3",
+    "nombre": "Dra. Ruiz",
+    "correo": "ruiz@udc.edu",
+    "matricula": "E998",
+    "rol": "administrador"
+  }
+]

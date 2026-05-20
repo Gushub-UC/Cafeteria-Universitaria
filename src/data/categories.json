@@ -1,0 +1,5 @@
+[
+  { "id_categoria": "c1", "nombre": "Bebidas" },
+  { "id_categoria": "c2", "nombre": "Snacks" },
+  { "id_categoria": "c3", "nombre": "Desayunos" }
+]

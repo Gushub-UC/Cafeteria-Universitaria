@@ -1,0 +1,16 @@
+[
+  {
+    "id_pedido": "o1",
+    "fecha": "2026-05-20T09:12:00Z",
+    "estado": "entregado",
+    "total": 4.75,
+    "id_usuario": "u1"
+  },
+  {
+    "id_pedido": "o2",
+    "fecha": "2026-05-20T10:05:00Z",
+    "estado": "preparando",
+    "total": 3.5,
+    "id_usuario": "u1"
+  }
+]

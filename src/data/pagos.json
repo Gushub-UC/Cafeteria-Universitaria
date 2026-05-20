@@ -1,0 +1,4 @@
+[
+  { "id_pago": "pay1", "id_pedido": "o1", "metodo_pago": "tarjeta", "monto": 4.75, "estado_pago": "completado" },
+  { "id_pago": "pay2", "id_pedido": "o2", "metodo_pago": "efectivo", "monto": 3.5, "estado_pago": "pendiente" }
+]
