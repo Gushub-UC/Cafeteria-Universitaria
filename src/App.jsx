@@ -34,29 +34,29 @@ export default function App() {
   return (
     <div>
       <Header />
-      <main style={{padding: '20px', maxWidth: 1100, margin: '0 auto'}}>
-        <section style={{display:'flex', gap:20}}>
-          <div style={{flex:1}}>
-            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
-              <h2 style={{margin:0}}>Productos</h2>
+      <main className="page-main">
+        <section className="page-content">
+          <div className="product-column">
+            <div className="product-header">
+              <h2>Productos</h2>
               <CategoryFilter categories={categories} selected={selectedCategory} onChange={setSelectedCategory} />
             </div>
 
-            <div style={{marginTop:12, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12}}>
+            <div className="product-grid">
               {products.map(p => (
                 <ProductCard key={p.id_producto} product={p} category={categoryMap[p.id_categoria]} />
               ))}
             </div>
           </div>
 
-          <aside style={{width:360}}>
+          <aside className="panel-sidebar">
             <AdminPanel users={users} products={productsData} onCreateOrder={handleCreateOrder} />
-            <div style={{marginTop:16}}>
+            <div className="orders-created">
               <h3>Órdenes creadas (local)</h3>
-              {orders.length === 0 ? <div style={{color:'#6b7280'}}>No hay órdenes aún.</div> : (
-                <ul style={{paddingLeft:16}}>
+              {orders.length === 0 ? <div className="empty-state">No hay órdenes aún.</div> : (
+                <ul>
                   {orders.map(o => (
-                    <li key={o.id_pedido} style={{marginBottom:8}}>
+                    <li key={o.id_pedido}>
                       <strong>{o.id_pedido}</strong> — {new Date(o.fecha).toLocaleString()} — ${o.total.toFixed(2)} — {o.estado}
                     </li>
                   ))}
