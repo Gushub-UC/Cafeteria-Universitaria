@@ -54,16 +54,16 @@ export default function AdminPanel({users, products, onCreateOrder}){
               <select value={line.id_producto} onChange={e=>updateLine(line.id, {id_producto:e.target.value})} style={{flex:1, padding:6}}>
                 {products.map(p => <option key={p.id_producto} value={p.id_producto}>{p.nombre} — ${p.precio.toFixed(2)}</option>)}
               </select>
-              <input type="number" min="1" value={line.cantidad} onChange={e=>updateLine(line.id, {cantidad: Number(e.target.value) || 1})} style={{width:60,padding:6}} />
-              <button onClick={()=>removeLine(line.id)} style={{padding:'6px 8px'}}>Eliminar</button>
+              <input type="number" min="1" value={line.cantidad} onChange={e=>updateLine(line.id, {cantidad: Number(e.target.value) || 1})} style={{width:60,padding:6, borderRadius:10, border:'1px solid rgba(23, 162, 95, 0.25)'}} />
+              <button className="btn btn-secondary" onClick={()=>removeLine(line.id)}>Eliminar</button>
             </div>
           ))}
-          <button onClick={addLine} style={{padding:'8px 10px', marginTop:6}}>Agregar producto</button>
+          <button className="btn btn-secondary" onClick={addLine} style={{marginTop:6}}>Agregar producto</button>
         </div>
       </div>
 
       <div style={{marginTop:12, display:'flex', gap:8}}>
-        <button onClick={createOrder} style={{flex:1,padding:10}}>Crear orden</button>
+        <button className="btn" onClick={createOrder} style={{flex:1}}>Crear orden</button>
       </div>
     </div>
   );
